@@ -1,0 +1,373 @@
+type: collection.insomnia.rest/5.0
+name: Scratch Pad
+meta:
+  id: wrk_scratchpad
+  created: 1755785020241
+  modified: 1755785020241
+  description: ""
+collection:
+  - name: Biblioteca
+    meta:
+      id: fld_5d663a40908642128868da519ac060d3
+      created: 1755785846539
+      modified: 1756994589804
+      sortKey: -1755785846539
+      description: ""
+    children:
+      - name: Usuarios
+        meta:
+          id: fld_efafe916af244bd685c82b2c7fbc7a34
+          created: 1755785864895
+          modified: 1756391394285
+          sortKey: -1755785864895
+          description: ""
+      - name: Livros
+        meta:
+          id: fld_97d8cf1109ba4dbeab0dfe667120d861
+          created: 1756390055075
+          modified: 1756390055075
+          sortKey: -1756390055075
+          description: ""
+  - name: Der1
+    meta:
+      id: fld_c2a6ca974cfb462da6f30aa9ac887f49
+      created: 1756992187445
+      modified: 1758196876955
+      sortKey: -1756992187445
+      description: ""
+    children:
+      - name: Disciplina
+        meta:
+          id: fld_97e86f30b7cf42b9b63192d00cc88433
+          created: 1756992202082
+          modified: 1756994391666
+          sortKey: -1756992202082
+          description: ""
+      - name: Turmas
+        meta:
+          id: fld_366938eba7b140f399a12bf397038f23
+          created: 1756993974557
+          modified: 1756994498967
+          sortKey: -1756993974557
+          description: ""
+      - name: Aulas
+        meta:
+          id: fld_635eaee17da24b9e94fff0fc02d9e5c5
+          created: 1756993984659
+          modified: 1756994495815
+          sortKey: -1756993984659
+          description: ""
+      - name: Professores
+        meta:
+          id: fld_ac7b74635e6d4213a849c5cab1a916f9
+          created: 1756994066428
+          modified: 1756994066428
+          sortKey: -1756994066428
+          description: ""
+  - name: Prova Loja
+    meta:
+      id: fld_8ad12c7a4b7c495293718f2d95da8836
+      created: 1758196897683
+      modified: 1758196897683
+      sortKey: -1758196897683
+      description: ""
+    children:
+      - name: Pedidos
+        meta:
+          id: fld_afbbc65bc8ad43ea9dcd191dbd5c0812
+          created: 1758196913869
+          modified: 1758196913869
+          sortKey: -1758196913869
+          description: ""
+        children:
+          - url: http://localhost:3000/pedido/02
+            name: Alterar
+            meta:
+              id: req_f0a45ad799d342fbbef63d7eaacf1c85
+              created: 1758197558345
+              modified: 1758198049614
+              isPrivate: false
+              description: ""
+              sortKey: -1758197558345
+            method: PATCH
+            body:
+              mimeType: application/json
+              text: |-
+                {
+                	"status": "enviado"
+                }
+            headers:
+              - name: Content-Type
+                value: application/json
+              - name: User-Agent
+                value: insomnia/11.5.0
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: http://localhost:3000/pedidos/01
+            name: Buscar
+            meta:
+              id: req_0a22c211f4824e72b0dac60762ca3265
+              created: 1758197560700
+              modified: 1758198014617
+              isPrivate: false
+              description: ""
+              sortKey: -1758197560700
+            method: GET
+            headers:
+              - name: User-Agent
+                value: insomnia/11.5.0
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: http://localhost:3000/pedidos
+            name: Listar
+            meta:
+              id: req_b67f825df5d14276ba617e4f70d9c286
+              created: 1758197564964
+              modified: 1758197641326
+              isPrivate: false
+              description: ""
+              sortKey: -1758197564964
+            method: GET
+            headers:
+              - name: User-Agent
+                value: insomnia/11.5.0
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: http://localhost:3000/pedido
+            name: Cadastrar
+            meta:
+              id: req_99dd884560cb484b96f610e770e185e4
+              created: 1758200695124
+              modified: 1758201130302
+              isPrivate: false
+              description: ""
+              sortKey: -1758200695124
+            method: POST
+            body:
+              mimeType: application/json
+              text: |-
+                {
+                		"id": "03",
+                		"produto comprado": "Boné da fvela",
+                		"qtd": "1",
+                		"data da compra": "2025-11-09",
+                		"status": "pendente"
+                }
+            headers:
+              - name: Content-Type
+                value: application/json
+              - name: User-Agent
+                value: insomnia/11.6.1
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+      - name: Produtos
+        meta:
+          id: fld_324384f1c3bd49e69b440988068efe88
+          created: 1758196933778
+          modified: 1758196933778
+          sortKey: -1758196933778
+          description: ""
+        children:
+          - url: http://localhost:3000/item/02
+            name: Alterar
+            meta:
+              id: req_f7858761f0f441609bb307679e95885d
+              created: 1758197063323
+              modified: 1758197992788
+              isPrivate: false
+              description: ""
+              sortKey: -1758197063323
+            method: PATCH
+            body:
+              mimeType: application/json
+              text: |-
+                {
+                	"preço": "12,00"
+                }	
+            headers:
+              - name: Content-Type
+                value: application/json
+              - name: User-Agent
+                value: insomnia/11.5.0
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: http://localhost:3000/itens/01
+            name: Apagar
+            meta:
+              id: req_d91a0517967240ae92e3243bf00f5926
+              created: 1758197065811
+              modified: 1758197211265
+              isPrivate: false
+              description: ""
+              sortKey: -1758197065811
+            method: DELETE
+            headers:
+              - name: User-Agent
+                value: insomnia/11.5.0
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: http://localhost:3000/itens/03
+            name: Buscar
+            meta:
+              id: req_9e087e591e3d4680ad9aa4a1021bbe3a
+              created: 1758197067426
+              modified: 1758203129228
+              isPrivate: false
+              description: ""
+              sortKey: -1758197067426
+            method: GET
+            headers:
+              - name: User-Agent
+                value: insomnia/11.5.0
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: http://localhost:3000/item
+            name: Cadastrar
+            meta:
+              id: req_d9d1e45c3c34467587d0236948c57058
+              created: 1758203000021
+              modified: 1758203121217
+              isPrivate: false
+              description: ""
+              sortKey: -1758203000021
+            method: POST
+            body:
+              mimeType: application/json
+              text: |-
+                {
+                	"id": "03",
+                	"nome": "Boné de sei oq la",
+                	"descrição": "bone lakers cor azul e roza",
+                	"preço": "62,00",
+                	"qtd. estoque": "15"
+                }
+            headers:
+              - name: Content-Type
+                value: application/json
+              - name: User-Agent
+                value: insomnia/11.6.1
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+      - name: Clientes
+        meta:
+          id: fld_e0f3495ebf244307b2e39865d3f9b117
+          created: 1758196942663
+          modified: 1758196942663
+          sortKey: -1758196942663
+          description: ""
+        children:
+          - url: http://localhost:3000/clientes/44982265-94
+            name: Buscar
+            meta:
+              id: req_29391d2eefc044608a32d2eeb32cafb1
+              created: 1758196957427
+              modified: 1758200982069
+              isPrivate: false
+              description: ""
+              sortKey: -1758196957427
+            method: GET
+            headers:
+              - name: User-Agent
+                value: insomnia/11.5.0
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: http://localhost:3000/cliente
+            name: Cadastrar
+            meta:
+              id: req_3513fd0ffb054de28ab22bd63d8312d8
+              created: 1758200400748
+              modified: 1758201151366
+              isPrivate: false
+              description: ""
+              sortKey: -1758200400748
+            method: POST
+            body:
+              mimeType: application/json
+              text: |-
+                {
+                	"nome completo": "Beltrano de Oliveira",
+                	"email": "789",
+                	"cpf": "44982265-94",
+                	"telefone": "(11) 99658-4587",
+                	"endereço": "Reinaldo fernandes"
+                }
+            headers:
+              - name: Content-Type
+                value: application/json
+              - name: User-Agent
+                value: insomnia/11.6.1
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+cookieJar:
+  name: Default Jar
+  meta:
+    id: jar_99d30891da4bdcebc63947a8fc17f076de878684
+    created: 1755785035259
+    modified: 1755785035259
+environments:
+  name: Base Environment
+  meta:
+    id: env_99d30891da4bdcebc63947a8fc17f076de878684
+    created: 1755785035055
+    modified: 1755785035055
+    isPrivate: false
